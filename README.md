@@ -13,3 +13,7 @@ kalo udah di edit nih kodenya, trus mau save / biar kalian kelihatan dianggep ud
 3. git push
 
 dah gitu doang, kalo masih bingung ya cari tutor sendiri. MIKIR KIDSS
+
+TRUS NIH, BACA BAEK-BAEK
+MISAL KALO GW/LU PADA UDAH NGELAKUIN UPDATE DI KODE, TRUS KALIAN MAU FILE YG TERBARU
+KALIAN CUKUP TULIS ( git pull ) --> setiap kali ada update di GitHub, dia narik perubahan ke repo lokal, jadi g perlu clane clone lagi, clone cuma sekali di awal
