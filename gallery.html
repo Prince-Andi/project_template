@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service | Project Kelompok</title>
+
+  <!-- Global Style -->
+  <link rel="stylesheet" href="assets/css/global.css">
+
+  <!-- CSS sesuai kemampuan ajh -->
+  <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+
+<body>
+  <!-- NAV GLOBAL -->
+  <nav class="navbar">
+    <div class="nav-logo">Buggati</div>
+
+    <ul class="nav-menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="models.html">Models</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="nav-toggle" id="navToggle">☰</div>
+  </nav>
+
+  <!-- start -->
+  <main id="gallery-section">
+      <!-- edit di sini, ini cuma conth -->
+      <h1>gallery Section</h1>
+      <p>Edit bagian ini</p>
+  </main>
+  <!--  END  -->
+
+  <!-- Global JS -->
+  <script src="assets/js/global.js"></script>
+
+  <!-- klo mau pke je cari di Page JS -->
+  <script src="assets/js/gallery.js"></script>
+
+  <script>
+    const toggle = document.getElementById("navToggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("show");
+    });
+  </script>
+  
+</body>
+</html>
