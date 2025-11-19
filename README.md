@@ -2,7 +2,7 @@ kalo mau ubh ubh css/js sesuaiin aja sama bagian kalian, css sama js ada di fold
 udh ada namanya cari sendiri aja ah
 kalo mau masukin gambar taroh aja di folder img
 
-trus kalo mau clone ya cari tutor sendiri ah, udh gede juga wkwk
+trus kalo mau clone ya cari tutor sendiri ah, udh gede juga HAHAHA
 
 kalo udah di edit nih kodenya, trus mau save / biar kalian kelihatan dianggep udah kerja sama temen kalian, tutornya gini kids:
 
