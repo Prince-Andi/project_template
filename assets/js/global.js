@@ -15,3 +15,10 @@ const navMenu = document.querySelector(".nav-menu");
 toggle.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
+
+// ================= LOAD FOOTER GLOBAL =================
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.body.insertAdjacentHTML("beforeend", data);
+  });

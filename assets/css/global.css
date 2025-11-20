@@ -117,3 +117,61 @@ body {
     to { opacity: 1; transform: translateY(0); }
   }
 }
+
+/* ================= FOOTER ================= */
+.footer {
+  width: 100%;
+  padding: 50px 5vw;
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #333;
+  color: #ddd;
+  margin-top: 80px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Brand */
+.footer-brand h2 {
+  color: #ecad29;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.footer-links a:hover {
+  color: #ecad29;
+}
+
+/* Copy */
+.footer-copy {
+  font-size: 14px;
+  opacity: .7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-links {
+    gap: 15px;
+  }
+}

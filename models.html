@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Project Kelompok</title>
+  <title>Models | Buggati Showroom</title>
 
   <!-- Global Style -->
   <link rel="stylesheet" href="assets/css/global.css">
 
-  <!-- CSS sesuai kemampuan ajh -->
+  <!-- Page CSS -->
   <link rel="stylesheet" href="assets/css/models.css">
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
 </head>
 
 <body>
-  <!-- NAV GLOBAL -->
+  <!-- NAV GLOBAL (pakai nav global yang sudah lo punya) -->
   <nav class="navbar">
     <div class="nav-logo">Buggati</div>
 
     <ul class="nav-menu">
       <li><a href="home.html">Home</a></li>
+      <li><a href="models.html" class="active">Models</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="models.html">Models</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -28,28 +31,70 @@
     <div class="nav-toggle" id="navToggle">☰</div>
   </nav>
 
-  <!-- mulai dari sini -->
-  <main id="models-section">
-      <!-- porto isi di sini -->
-      <h1>Models Section</h1>
-      <p>Edit bagian ini</p>
-  </main>
-  <!-- END -->
+  <!-- ===== HERO / FULLSCREEN SHOWCASE ===== -->
+  <header class="model-screen" id="modelScreen">
+    <div class="slides" id="slides">
+      <!-- slides injected by JS -->
+    </div>
+
+    <!-- overlay content for current slide -->
+    <div class="hero-overlay" id="heroOverlay">
+      <div class="hero-left">
+        <div class="brand">Buggati</div>
+        <h1 class="model-name" id="heroTitle">CHIRON SUPER SPORT</h1>
+        <div class="model-sub" id="heroSubtitle">1600 HP • W16 • 440 km/h</div>
+        <p class="model-desc" id="heroDesc">A refined hypercar pushing performance and luxury to the extreme.</p>
+
+        <div class="hero-ctas">
+          <a href="#details" class="btn primary">View Details</a>
+          <a href="contact.html" class="btn outline">Book Test Drive</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="nav-arrows">
+          <button class="arrow prev" id="prevBtn" aria-label="Previous slide">‹</button>
+          <button class="arrow next" id="nextBtn" aria-label="Next slide">›</button>
+        </div>
+
+        <div class="slide-indicator">
+          <div id="slideIndex">1</div>
+          <div class="slash">/</div>
+          <div id="slideTotal">6</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== DETAILS SECTION (scroll down) ===== -->
+  <section class="model-details" id="details">
+    <div class="container">
+      <div class="detail-left" id="detailLeft">
+        <h2 id="detailTitle">CHIRON SUPER SPORT</h2>
+        <p id="detailSubtitle">Hypercar — Limited production</p>
+
+        <ul class="specs">
+          <li><strong>Power:</strong> 1600 HP</li>
+          <li><strong>0–100 km/h:</strong> 2.4 s</li>
+          <li><strong>Top speed:</strong> 440 km/h</li>
+          <li><strong>Engine:</strong> W16 Quad Turbo</li>
+        </ul>
+
+        <p id="detailDesc">Legendary engineering paired with extreme luxury. This model is tuned for top speed and track performance while keeping artisanal leather interiors and bespoke finishes.</p>
+      </div>
+
+      <div class="detail-right" id="detailRight">
+        <div class="thumbs" id="thumbs">
+          <!-- thumbnails injected by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Global JS -->
-  <script src="assets/js/global.js"></script>
+  <script src="assets/js/global.js" defer></script>
 
   <!-- Page JS -->
-  <script src="assets/js/models.js"></script>
-
-  <script>
-    const toggle = document.getElementById("navToggle");
-    const links = document.querySelector(".nav-links");
-
-    toggle.addEventListener("click", () => {
-      links.classList.toggle("show");
-    });
-  </script>
-  
+  <script src="assets/js/models.js" defer></script>
 </body>
 </html>
