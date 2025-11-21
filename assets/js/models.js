@@ -1,7 +1,3 @@
-// assets/js/models.js
-// Fullscreen models slider + details
-// depends on GSAP (loaded via CDN in HTML)
-
 // Model data (6 models)
 const models = [
   {
