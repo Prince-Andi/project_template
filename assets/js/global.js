@@ -16,7 +16,7 @@ toggle.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-// ================= LOAD FOOTER GLOBAL =================
+// LOAD FOOTER GLOBAL 
 fetch("footer.html")
   .then(res => res.text())
   .then(data => {
