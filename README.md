@@ -4,6 +4,8 @@ kalo mau masukin gambar taroh aja di folder img
 
 trus kalo mau clone ya cari tutor sendiri ah, udh gede juga HAHAHA
 
+SEBELUM NGEDIT WAJIB git pull
+
 kalo udah di edit nih kodenya, trus mau save / biar kalian kelihatan dianggep udah kerja sama temen kalian, tutornya gini kids:
 
 1. git add (NAMA FILE YG DI EDIT. misal: README.md) -=> git add README.md
