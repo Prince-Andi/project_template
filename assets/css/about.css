@@ -1,0 +1,104 @@
+/* ===== HERO ===== */
+.about-hero {
+  height: 90vh;
+  background: url("../img/about-hero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overlay {
+  text-align: center;
+  color: white;
+  backdrop-filter: brightness(0.6);
+  padding: 40px;
+}
+
+.about-overlay h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.about-overlay p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* ===== CONTENT ===== */
+.about-section {
+  padding: 60px 0;
+}
+
+.about-flex {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-left h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.about-left p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-right img {
+  width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ===== VALUES ===== */
+.values {
+  background: #f4f4f4;
+  padding: 60px 0;
+}
+
+.center {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.value-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.value-card p {
+  line-height: 1.6;
+}
+
+/* ===== LEGACY BANNER ===== */
+.legacy-banner {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
