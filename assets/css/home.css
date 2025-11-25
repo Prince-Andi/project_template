@@ -1,0 +1,84 @@
+/* HOME PAGE - hero section ala Bugatti Solitaire */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%; left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.brand-title {
+    font-family: 'Oswald', Arial, sans-serif;
+    letter-spacing: 0.12em;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.andshadia-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.2rem;
+}
+
+.tagline {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 2.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    border: 1.5px solid #fff;
+    padding: 0.8em 2.1em;
+    border-radius: 28px;
+    background: transparent;
+    color: #fff;
+    font-size: 1.03em;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    font-family: 'Oswald', Arial, sans-serif;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: #191919;
+}
