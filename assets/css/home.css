@@ -1,4 +1,4 @@
-/* HOME PAGE - hero section ala Bugatti Solitaire */
+/* HOME PAGE - hero section */
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -25,7 +25,7 @@
     height: auto;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    filter: brightness(0.7);
+    filter: brightness(0.9);
     z-index: 1;
 }
 
@@ -42,19 +42,12 @@
 }
 
 .brand-title {
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Lora', serif;
     letter-spacing: 0.12em;
-    font-size: 4.3rem;
+    font-size: 4.5rem;
     margin-bottom: 1.5rem;
     font-weight: 600;
-}
-
-.andshadia-title {
-    font-family: 'Pacifico', cursive;
-    font-size: 1rem;
-    font-weight: 100;
-    letter-spacing: 0.08em;
-    margin-bottom: 1.2rem;
+    text-align: center;
 }
 
 .tagline {
