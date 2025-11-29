@@ -18,7 +18,7 @@ ALUR BUAT GW:
 6. git commit -m "pesan"
 7. git push origin Andi
 
-8. git fetch --all
+8. git fetch --all (ngambil semua branch)
 9. git checkout main
 10. git pull
 11. git merge Andi
