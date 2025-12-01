@@ -2,25 +2,27 @@ HALO HALO
 
 ALUR BUAT KALIAN:
 1. git checkout main
-2. git pull
+2. git pull origin main
 3. git checkout NAMA-BRANCH
-4. ngoding
+4. git pull --rebase origin main
+ ngoding
 5. git add .
 6. git commit -m "pesan"
 7. git push origin NAMA-BRANCH
 
 ALUR BUAT GW:
 1. git checkout main
-2. git pull
+2. git pull origin main
 3. git checkout Andi
-4. ngoding
+4. git pull --rebase origin main
+ ngoding
 5. git add .
 6. git commit -m "pesan"
 7. git push origin Andi
 
 8. git fetch --all (ngambil semua branch)
 9. git checkout main
-10. git pull
+10. git pull origin main
 11. git merge Andi
 12. git push
 
