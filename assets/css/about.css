@@ -1,104 +1,120 @@
-/* ===== HERO ===== */
+/* ====== GLOBAL ABOUT STYLE ====== */
+#about-section {
+  margin-top: 120px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* ====== HERO SECTION ====== */
 .about-hero {
+<<<<<<< HEAD
   height: 90vh;
   background: url("Bugatti.jpg") center/cover no-repeat;
   position: relative;
+=======
+  height: 60vh;
+  background-image: url('assets/img/Bugatti1.jpg') center/cover no-repeat;
+>>>>>>> about/shafana
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-
-.about-overlay {
+  align-items: center;
   text-align: center;
-  color: white;
-  backdrop-filter: brightness(0.6);
-  padding: 40px;
+
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
 }
 
-.about-overlay h1 {
-  font-size: 60px;
-  letter-spacing: 3px;
-  margin: 0;
+.about-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(5px);
 }
 
-.about-overlay p {
-  font-size: 20px;
+.about-hero h1,
+.about-hero p {
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+.about-hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-hero p {
   margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ecad29;
 }
 
-/* ===== CONTENT ===== */
+/* ====== ANIMATION ====== */
+@keyframes fadeUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(35px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+/* ====== CONTENT SECTION ====== */
 .about-section {
-  padding: 60px 0;
+  padding: 60px 12%;
 }
 
 .about-flex {
   display: flex;
-  gap: 50px;
   align-items: center;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .about-left {
   flex: 1;
+  padding: 20px;
+  border-left: 3px solid #ecad29;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
 }
 
 .about-left h2 {
-  font-size: 35px;
+  font-size: 2.2rem;
   margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .about-left p {
-  line-height: 1.8;
-  margin-bottom: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+  font-size: 1.05rem;
+  transition: .3s ease;
 }
 
-.about-right img {
-  width: 450px;
-  border-radius: 12px;
-  object-fit: cover;
+/* Text hover effect */
+.about-left:hover p {
+  opacity: 1;
+  transform: translateX(6px);
 }
 
-/* ===== VALUES ===== */
-.values {
-  background: #f4f4f4;
-  padding: 60px 0;
-}
-
-.center {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-.value-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.value-card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-}
-
-.value-card h3 {
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.value-card p {
-  line-height: 1.6;
-}
-
-/* ===== LEGACY BANNER ===== */
-.legacy-banner {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 40px 0;
-  font-size: 24px;
-  letter-spacing: 2px;
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  .about-hero p {
+    font-size: 1rem;
+  }
+  .about-section {
+    padding: 40px 6%;
+  }
 }
