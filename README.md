@@ -37,6 +37,7 @@ cara ngatasinnya:
 atau
     git pull --rebase
 
+<<<<<<< HEAD
 2. muncul merge conflict
 Karena (misal):
     README versi main ada isinya
@@ -49,18 +50,16 @@ liat yg ada tanda begini:
     =======
     (konten README dari andi/all-in-one)
     >>>>>>> andi/all-in-one
+=======
+>>>>>>> 6c1ee90 (up read)
 
-Pilih mau pake isi yang mana:
-    1. Pilihan A — Pake isi branch andi/all-in-one
-    Hapus bagian HEAD, sama tanda-tandanya.
-    2. Pilihan B — Pake isi dari main
-    Hapus bagian bawah (yang dari branch lo).
-    3. Pilihan C — Gabung manual dua-duanya
-    Terserah lo mau gabung gimana. Biasanya README sih digabung aman.
 
+<<<<<<< HEAD
 TRUS COMMIT KALO UDH:
 git add README.md
 git commit -m "fix: merge conflict README"
 git push
 
 klao masih di main tinggal push aja
+=======
+>>>>>>> 6c1ee90 (up read)
