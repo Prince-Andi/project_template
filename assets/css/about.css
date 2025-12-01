@@ -7,9 +7,13 @@
 
 /* ====== HERO SECTION ====== */
 .about-hero {
+<<<<<<< HEAD
   height: 90vh;
   background: url("Bugatti.jpg") center/cover no-repeat;
   position: relative;
+=======
+
+>>>>>>> 52a1000 (fix: merge conflict from about/shafana)
   display: flex;
   flex-direction: column;
   justify-content: center;
