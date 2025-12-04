@@ -15,13 +15,14 @@
     align-items: center;
     background-color: #111;
     padding: 15px 30px;
-    font-family: 'Lora', serif;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
 }
 
 .nav-logo {
-    color: #f4c430; /* Gold-like color for luxury feel */
-    font-weight: 700;
-    font-size: 1.8rem;
+    color:rgba(236,173,41,0.95);
+    font-weight: 750;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .nav-menu li a:hover {
-    color: #f4c430;
+    color: rgba(236,173,41,0.95);
 }
 
 /* Mobile Menu Toggle */
@@ -70,13 +71,31 @@
     .nav-toggle {
     display: block;
     }
+
+    .news-updates ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        column-gap: 20px
+    }
+    
+    .news-updates ul li:nth-child(3) {
+        grid-column: 1;
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .news-updates ul li:nth-child(3) .news-images {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 /* Hero Section */
 
 .hero-section {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +141,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.9,5);
+    filter: brightness(0.9);
 }
 
 .brand-title {
@@ -147,50 +166,115 @@
 
 /* News Updates Section */
 .news-updates {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 20px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 7px;
     font-family: Arial, sans-serif;
 }
 
 .news-updates h2 {
     font-family: 'Lora', serif;
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
     color: #ffffff;
-    border-bottom: 2px solid #f4c430;
-    padding-bottom: 5px;
+    border-bottom: 5px solid rgba(236,173,41,0.95);
+    padding-bottom: 10px;
 }
 
 .news-updates ul {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px auto;
+    gap: 20px;
+    padding: 0;
 }
 
 .news-updates ul li {
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-    line-height: 1.4;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px 25px;
+    border-radius: 10px;
     color: #ffffff;
+    height: 350px; /* Tinggi sama untuk kolom 1 & 2 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(236,173,41,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-updates ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 35px rgba(236,173,41,0.2);
+}
+
+.news-updates ul li:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 800px;
+    grid-row: 2;
+    height: auto;
+    padding: 35px 30px;
+}
+
+.news-updates ul li .news-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.news-readmore {
+    background: rgba(236,173,41,0.95);
+    color: #111;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-updates ul li:nth-child(3) .news-images {
+    display: flex;
+    gap: 30px;
+    margin-top: 1px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .news-updates ul li img {
     max-width: 100%;
+    max-height: 220px;
     height: auto;
-    margin-top: 10px;
+    width: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    flex-shrink: 0;
 }
 
 /* Call to Action Section */
 .call-to-action {
-    background-color: #f4c430;
+    background-color: rgba(236,173,41,0.95);;
     color: #111;
     text-align: center;
     padding: 40px 20px;
     font-family: 'Lora', serif;
-    margin-top: 40px;
-    border-radius: 10px;
+    margin: 60px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
 .call-to-action h2 {
@@ -206,7 +290,7 @@
 
 .call-to-action button {
     background-color: #111;
-    color: #f4c430;
+    color: rgba(236,173,41,0.95);
     border: none;
     padding: 12px 28px;
     font-size: 1.1rem;

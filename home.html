@@ -45,18 +45,20 @@
 <section class="news-updates">
   <h2>Latest News</h2>
   <ul>
-    <li>"Best in Show" in London Concours - June 2025
-      <br />
+    <li>
+      <div class="news-title">"Best in Show" in London Concours - June 2025</div>
       <img src="assets/img/BugattiEB110.jpg" alt="Best in Show London Concours" />
     </li>
-    <li>"Book of the Year (Figoni/Buggati)" from International Historic Motoring Awards (IHMA) - November 2025 and Royal Automobile Club (RAC) - October 2025
-      <br />
-      <img src="assets/img/book1.webp" alt="Book Award IHMA" />
-      <img src="assets/img/book2.webp" alt="Book Award RAC" />
-    </li>
-    <li>"Elegance Award" and Runner-up in its category at Monterey Car Week - August 2025
-      <br />
+    <li>
+      <div class="news-title">"Elegance Award" and Runner-up in its category at Monterey Car Week - August 2025</div>
       <img src="assets/img/BugattiAtalante.jpg" alt="Elegance Award" />
+    </li>
+    <li>
+      <div class="news-title">"Book of the Year (Figoni/Buggati)" from International Historic Motoring Awards (IHMA) - November 2025 and Royal Automobile Club (RAC) - October 2025</div>
+      <div class="news-images">
+        <img src="assets/img/book1.webp" alt="Book Award IHMA" />
+        <img src="assets/img/book2.webp" alt="Book Award RAC" />
+      </div>
     </li>
   </ul>
 </section>
@@ -68,12 +70,9 @@
   <script src="assets/js/home.js"></script>
 
   <script>
-    const toggle = document.getElementById("navToggle");
-    const links = document.querySelector(".nav-menu");
-
-    toggle.addEventListener("click", () => {
-      links.classList.toggle("show");
-    });
+    document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navMenu').classList.toggle('show');
+});
   </script>
 
 </body>
