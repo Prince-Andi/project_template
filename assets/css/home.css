@@ -82,7 +82,7 @@
     .news-updates ul li:nth-child(3) {
         grid-column: 1;
         max-width: 100%;
-        padding: 25px;
+        padding: 15px;
     }
 
     .news-updates ul li:nth-child(3) .news-images {
@@ -186,17 +186,17 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 400px auto;
+    grid-template-rows: 420px auto;
     gap: 20px;
     padding: 0;
 }
 
 .news-updates ul li {
     background: rgba(0, 0, 0, 0.6);
-    padding: 25px 25px;
+    padding: 10px;
     border-radius: 10px;
     color: #ffffff;
-    height: 350px; /* Tinggi sama untuk kolom 1 & 2 */
+    height: 420px; /* Tinggi sama untuk kolom 1 & 2 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,6 +204,9 @@
     text-align: center;
     border: 1px solid rgba(236,173,41,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .news-updates ul li:hover {
@@ -214,20 +217,23 @@
 .news-updates ul li:nth-child(3) {
     grid-column: 1 / -1;
     justify-self: center;
-    max-width: 800px;
+    max-width: 980px;
     grid-row: 2;
-    height: auto;
-    padding: 35px 30px;
+    height: 407px;
+    padding: 50px 30px;
 }
 
 .news-updates ul li .news-title {
     font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 20px;
+    font-weight: 300px;
+    margin-bottom: 5px;
     line-height: 1.4;
     flex-grow: 1;
     display: flex;
     align-items: center;
+    word-wrap: break-word;
+    padding: 0 30px;
+    min-height: 60px;
 }
 
 .news-readmore {
@@ -238,7 +244,7 @@
     margin-top: 15px;
     border-radius: 20px;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 700px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -247,22 +253,43 @@
 
 .news-updates ul li:nth-child(3) .news-images {
     display: flex;
-    gap: 30px;
-    margin-top: 1px;
+    max-width: 290px;
+    height: 260px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-shrink: 0;
+    object-fit: 0;
 }
 
 .news-updates ul li img {
+    width: 100%;
+    height: 300px;
     max-width: 100%;
-    max-height: 220px;
-    height: auto;
-    width: auto;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    flex-shrink: 0;
+    display: 15px;
+    margin-bottom: 25x;
 }
+
+.learn-more {
+    display: inline-block;
+    margin-top: auto;
+    color: rgba(236, 173, 41, 0.95);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.learn-more:hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /* Call to Action Section */
 .call-to-action {
