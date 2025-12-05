@@ -38,6 +38,3 @@ cara ngatasinnya:
     git stash pop
 atau
     git pull --rebase
-
-
-
