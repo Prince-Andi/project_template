@@ -1,10 +1,14 @@
-/* ====== GLOBAL ABOUT STYLE ====== */
-#about-section {
-  margin-top: 120px;
-  color: #fff;
-  font-family: "Inter", sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
+<<<<<<< HEAD
 /* ====== HERO SECTION ====== */
 .about-hero {
 
@@ -17,97 +21,102 @@
   backdrop-filter: blur(4px);
   position: relative;
   overflow: hidden;
+=======
+:root {
+    --main-color:#ff702a;
+    --text-color:#c9e6f5;
+    --bg-color:#000000;
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+>>>>>>> origin/about/shafana
 }
 
-.about-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(5px);
+*::selection {
+    background: var(--main-color);
+    color:#fff;
 }
 
-.about-hero h1,
-.about-hero p {
-  position: relative;
-  z-index: 2;
-  animation: fadeUp 1s ease forwards;
-  opacity: 0;
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
 }
 
-.about-hero h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
 }
 
-.about-hero p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #ecad29;
+.logo {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
 }
 
-/* ====== ANIMATION ====== */
-@keyframes fadeUp {
-  from { 
-    opacity: 0; 
-    transform: translateY(35px); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0);
-  }
+.navbar {
+    display: flex;
 }
 
-/* ====== CONTENT SECTION ====== */
-.about-section {
-  padding: 60px 12%;
+.navbar a { 
+    color:black;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
 }
 
-.about-flex {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
 }
 
-.about-left {
-  flex: 1;
-  padding: 20px;
-  border-left: 3px solid #ecad29;
-  animation: fadeUp 1s ease forwards;
-  opacity: 0;
+section {
+    padding: 70px 17%;
 }
 
-.about-left h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  letter-spacing: 1px;
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
 }
 
-.about-left p {
-  line-height: 1.7;
-  opacity: 0.9;
-  font-size: 1.05rem;
-  transition: .3s ease;
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
 }
 
-/* Text hover effect */
-.about-left:hover p {
-  opacity: 1;
-  transform: translateX(6px);
+.about-text span{
+    color: var(--main-color);
+    font-weight: 200;
 }
 
-/* ===== RESPONSIVE ===== */
-@media(max-width: 768px) {
-  .about-hero h1 {
-    font-size: 2.2rem;
-  }
-  .about-hero p {
-    font-size: 1rem;
-  }
-  .about-section {
-    padding: 40px 6%;
-  }
+.about-text h2{
+    font-size: var(--h2-font);
 }
+
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.heading h2{
+    font-size: var(--h2-font);
+}
+
