@@ -8,7 +8,6 @@
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* ====== HERO SECTION ====== */
 .about-hero {
 
@@ -21,7 +20,7 @@
   backdrop-filter: blur(4px);
   position: relative;
   overflow: hidden;
-=======
+}
 :root {
     --main-color:#ff702a;
     --text-color:#c9e6f5;
@@ -29,7 +28,7 @@
     --big-font: 5rem;
     --h2-font: 2.25rem;
     --p-font: 0.9rem;
->>>>>>> origin/about/shafana
+
 }
 
 *::selection {
