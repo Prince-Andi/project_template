@@ -1,57 +1,3 @@
-
-/* HOME PAGE - hero section ala Bugatti Solitaire */
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding: 15px 30px;
-    font-family: 'Oswald', sans-serif;
-    position: relative;
-}
-
-.nav-logo {
-    color:rgba(236,173,41,0.95);
-    font-weight: 750;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-.nav-menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-menu li a:hover {
-    color: rgba(236,173,41,0.95);
-}
-
-/* Mobile Menu Toggle */
-.nav-toggle {
-    display: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-}
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-menu {
@@ -62,6 +8,10 @@
     position: absolute;
     top: 60px;
     left: 0;
+    }
+
+    .nav-menu.show {
+    display: flex;
     }
 
     .news-updates ul {
@@ -80,6 +30,23 @@
     .news-updates ul li:nth-child(3) .news-images {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .news-updates h2 {
+    font-size: 2.5rem; /* Konsisten dengan showroom */
+    }
+
+    .showroom-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .showroom-item {
+        height: 250px;
+    }
+
+    .showroom-section h2 {
+    font-size: 2.5rem;
     }
 }
 
@@ -132,19 +99,15 @@
     text-align: center;
     gap: 1rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     filter: brightness(0.9);
 }
 
 .brand-title {
-
     font-family: 'Oswald', Arial, sans-serif;
     letter-spacing: 0.1em;
-    font-size: clamp(3rem, 10vw,4.5rem);
-    margin: 0 0 1rem 0;
-    font-weight: 600;
-    font-size: 4rem;
+    font-size: clamp(3rem, 10vw, 4.5rem);
+    margin: 1rem;
+    font-weight: 800;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     text-align: center;
     display: block;
@@ -154,7 +117,7 @@
 .tagline {
     margin-top: 10px;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 100;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -219,7 +182,7 @@
 
 .news-updates ul li .news-title {
     font-size: 1.3rem;
-    font-weight: 300px;
+    font-weight: 300;
     margin-bottom: 5px;
     line-height: 1.4;
     flex-grow: 1;
@@ -238,7 +201,7 @@
     margin-top: 15px;
     border-radius: 20px;
     font-size: 0.95rem;
-    font-weight: 700px;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -261,8 +224,6 @@
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    display: 15px;
-    margin-bottom: 25x;
 }
 
 .learn-more {
@@ -284,10 +245,83 @@
     cursor: pointer;
 }
 
+/* Showroom Section */
+.showroom-section {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 7px;
+    font-family: Arial, sans-serif;
+}
+
+.showroom-section h2 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    border-bottom: 5px solid rgba(236,173,41,0.95);
+    padding-bottom: 10px;
+}
+
+.showroom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.showroom-item {
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(236,173,41,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showroom-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(236,173,41,0.3);
+}
+
+.showroom-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+}
+
+.showroom-item:hover img {
+    filter: brightness(0.5);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #ffffff;
+    padding: 30px 20px 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.showroom-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(236,173,41,0.95);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 /* Call to Action Section */
 .call-to-action {
-    background-color: rgba(236,173,41,0.95);;
+    background-color: rgba(236,173,41,0.95);
     color: #111;
     text-align: center;
     padding: 40px 20px;

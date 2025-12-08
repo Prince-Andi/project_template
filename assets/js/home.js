@@ -1,4 +1,3 @@
-/ assets/js/home.js
 document.querySelectorAll('.cta-button').forEach(btn => {
     btn.addEventListener('mousedown', ()=>{
         btn.style.transform = 'scale(0.97)';

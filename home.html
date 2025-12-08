@@ -10,6 +10,10 @@
 
   <!-- CSS halaman -->
   <link rel="stylesheet" href="assets/css/home.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,7 +33,7 @@
   </nav>
 
   <!-- CONTENT -->
-  <main id="home-section"class="hero-section">
+  <section id="home-section"class="hero-section">
     <div class="hero-bg">
       <video autoplay muted loop class="bg-video">
         <source src="assets/img/vidbuggati.mp4" type="video/mp4" />
@@ -39,8 +43,7 @@
       <h1 class="brand-title">BUGATTI</h1>
       <p class="tagline">ROOTED IN TRADITION. BUILT TO LEAVE A LEGACY.</p>
     </div>
-  </main>
-  <!-- END -->
+  </section>
 
 <section class="news-updates">
   <h2>Latest News</h2>
@@ -72,6 +75,48 @@
   </ul>
 </section>
 
+<section class="showroom-section">
+  <h2>Experience Our Showroom</h2>
+  <div class="showroom-grid">
+    <div class="showroom-item">
+      <img src="assets/img/showroom4.avif" alt="Bugatti Showroom Interior" />
+      <div class="overlay">
+        <span>Discover Luxury</span>
+      </div>
+    </div>
+    <div class="showroom-item">
+      <img src="assets/img/showroom3.webp" alt="Bugatti Showroom Display" />
+      <div class="overlay">
+        <span>Premium Experience</span>
+      </div>
+    </div>
+    <div class="showroom-item">
+      <img src="assets/img/showroom2.jpg" alt="Bugatti Showroom Night" />
+      <div class="overlay">
+        <span>Exclusive Collection</span>
+      </div>
+    </div>
+    <div class="showroom-item">
+      <img src="assets/img/showroom6.jpg" alt="Bugatti Customization" />
+      <div class="overlay">
+        <span>Personalization</span>
+      </div>
+    </div>
+    <div class="showroom-item">
+      <img src="assets/img/showroom1.jpg" alt="Bugatti Showroom Exterior" />
+      <div class="overlay">
+        <span>Architectural Design</span>
+      </div>
+    </div>
+    <div class="showroom-item">
+      <img src="assets/img/showroom5.jpg" alt="Bugatti VIP Lounge" />
+      <div class="overlay">
+        <span>VIP Experience</span>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Global JS -->
   <script src="assets/js/global.js"></script>
 
@@ -80,7 +125,7 @@
 
   <script>
     document.getElementById('navToggle').addEventListener('click', () => {
-    document.getElementById('navMenu').classList.toggle('show');
+    document.querySelector('.nav-menu').classList.toggle('show');
 });
   </script>
 
