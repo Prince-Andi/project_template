@@ -32,73 +32,56 @@
 
   <!-- edit sesuai kemampuan ajh yh  -->
   <main id="contact-section">
+      <!-- bagian broknHOME isi di sini yh -->
+      <div class="contact-header">
+      <h2>Contact Us</h2>
+      <p>We are always ready to assist you. Reach out to us anytime.</p>
+    </div>
 
     <div class="contact-container">
-      <h1 class="title-contact">CONTACT BUGATTI</h1>
-      <p class="subtitle-contact">Reach out to our team for inquiries, services, or personalized assistance.</p>
 
-      <form class="contact-form">
+      <!-- LEFT: CONTACT INFO -->
+      <div class="contact-info">
 
-        <!-- ROW 1 -->
-        <div class="form-row">
-          <div class="form-group">
-            <label>Salutation</label>
-            <select>
-              <option disabled selected>Select</option>
-              <option>Mr.</option>
-              <option>Mrs.</option>
-              <option>Prefer not to say</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" placeholder="Your first name">
-          </div>
+        <div class="info-box">
+          <h3>Head Office</h3>
+          <p>Bugatti Automotive Group</p>
+          <p>Molsheim, France</p>
         </div>
 
-        <!-- ROW 2 -->
-        <div class="form-row">
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="example@gmail.com">
-          </div>
-
-          <div class="form-group">
-            <label>Subject</label>
-            <select>
-              <option disabled selected>Select</option>
-              <option>Services</option>
-              <option>Historical Models</option>
-              <option>Financial Services</option>
-              <option>Events</option>
-            </select>
-          </div>
+        <div class="info-box">
+          <h3>Email</h3>
+          <p>support@bugatti.com</p>
         </div>
 
-        <!-- ROW 3 -->
-        <div class="form-row">
-          <div class="form-group">
-            <label>Country</label>
-            <input type="text" placeholder="Your country">
-          </div>
-
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" placeholder="Your last name">
-          </div>
+        <div class="info-box">
+          <h3>Phone</h3>
+          <p>+33 123 456 789</p>
         </div>
 
-        <!-- MESSAGE -->
-        <div class="form-group full">
-          <label>Message</label>
-          <textarea placeholder="Your message..."></textarea>
-        </div>
+      </div>
 
-        <!-- BUTTON -->
-        <button class="btn-contact">Send Message</button>
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="contact-form">
+        <form action="#" method="POST">
 
-      </form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- MAP -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.929021002288!2d7.4921!3d48.5359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c88fcb54f21b%3A0x86e3fbbf81107d27!2sBugatti!5e0!3m2!1sen!2sid!4v0000000000"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
     </div>
 
   </main>
